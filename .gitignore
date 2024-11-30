@@ -1,0 +1,7 @@
+aoc
+*~
+.*.swp
+.DS_Store
+run.go
+.idea/
+.vscode/
