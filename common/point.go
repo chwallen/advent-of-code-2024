@@ -41,6 +41,10 @@ func (c Point) XY() (x, y int) {
 	return c.x, c.y
 }
 
+func (c Point) IsWithinBounds(minX, minY, maxX, maxY int) bool {
+	return minX <= c.x && c.x < maxX && minY <= c.y && c.y < maxY
+}
+
 type Direction Point
 
 var Up = Direction{x: 0, y: -1}
