@@ -19,6 +19,11 @@ func (s Set[T]) Add(v T) bool {
 	return true
 }
 
+// Clear turns the set s into the empty set.
+func (s Set[T]) Clear() {
+	clear(s.items)
+}
+
 // Contains checks if the item v is present in the set s.
 func (s Set[T]) Contains(v T) bool {
 	_, found := s.items[v]
